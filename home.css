@@ -1,0 +1,61 @@
+body {
+    margin: 0px;
+    color: #FFF;
+    font-family: 'Inter';
+    font-weight: 700;
+    background-color: #1C3354;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #071533;
+    font-size: 16px;
+    padding: 0px 20px;
+}
+
+.logo-links {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.links a {
+    padding: 0px 10px;
+}
+
+.home:hover,
+.courses:hover {
+    transition: color 0.3s;
+    color: #808080;
+}
+
+nav,
+a {
+    color: #FFF;
+}
+
+a {
+    text-decoration: none;
+}
+
+.user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email {
+    padding: 0px 10px;
+}
+
+img {
+    border-radius: 30px;
+}
