@@ -3,11 +3,11 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: #1C3354;
+    font-family: 'Inter';
 }
 
 header {
     color: #FFF;
-    font-family: 'Inter';
     font-weight: 700;
 }
 
@@ -17,7 +17,7 @@ header {
     align-items: center;
     background-color: #071533;
     font-size: 12px;
-    padding: 0px 20px;
+    padding: 0px 30px;
 }
 
 .logo-links {
@@ -40,12 +40,8 @@ header {
     color: #808080;
 }
 
-nav,
-a {
+.logo-links a {
     color: #FFF;
-}
-
-a {
     text-decoration: none;
 }
 
@@ -64,7 +60,7 @@ a {
     border-radius: 30px;
 }
 
-.login {
+.forgot-password {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -76,11 +72,16 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
+    width: 350px;
 }
 
-.logo img {
-    width: 150px;
+.password-icon img {
+    width: 80px;
+    height: 80px;
+}
+
+.title, .subttitle{
+    font-family: 'Inter';
 }
 
 .input-group {
@@ -108,17 +109,40 @@ a {
     height: 18px;
 }
 
-button {
-    background: #071533;
+.option-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.send-link {
+    background: #0538A5;
     color: white;
     border: none;
     padding: 8px 15px;
     border-radius: 5px;
-    font-size: 12px;
+    font-size: 14px;
     cursor: pointer;
-    margin-top: 15px;
+    margin: 15px 0px;
 }
 
-button:hover {
-    background: #1C3354;
+.create-account {
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 15px 0px 20px 0px;
+}
+
+
+.back-login a {
+    color: #000;
+    text-decoration: none;
+}
+
+.back-login {
+    color: #000;
+    font-weight: 600;
+    border-radius: 5px;
+    border: solid 1px #808080;
+    padding: 10px 30px;
 }

@@ -3,11 +3,11 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: #1C3354;
+    font-family: 'Inter';
 }
 
 header {
     color: #FFF;
-    font-family: 'Inter';
     font-weight: 700;
 }
 
