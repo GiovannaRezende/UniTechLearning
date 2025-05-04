@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar | UniTech Learning</title>
+    <link rel="shortcut icon" type="imagex/png" href="../../src/assets/images/icon-page.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <script>
+            fetch("../components/header/header.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("header").innerHTML = data;
+                    let link = document.createElement("link");
+                    link.rel = "stylesheet";
+                    link.href = "../components/header/header.css";
+                    document.head.appendChild(link);
+                });
+        </script>
+    </div>
+
+    <h2>Cadastro de Usuários</h2>
+    <div class="register-user">
+        <form action="">
+            <div class="input-group">
+                <span class="icon"><img src="../../src/assets/images/user.svg" alt="Ícone de usuário"></span>
+                <input type="text" placeholder="Nome" required>
+            </div>
+            <div class="input-group">
+                <span class="icon"><img src="../../src/assets/images/user.svg" alt="Ícone de usuário"></span>
+                <input type="text" placeholder="Sobrenome" required>
+            </div>
+            <div class="input-group">
+                <span class="icon"><img src="../../src/assets/images/email.png" alt="Ícone de usuário"></span>
+                <input type="text" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <span class="icon"><img src="../../src/assets/images/password.svg" alt="Ícone de usuário"></span>
+                <input type="password" placeholder="Senha" required>
+            </div>
+            <div class="input-group">
+                <span class="icon"><img src="../../src/assets/images/password.svg" alt="Ícone de usuário"></span>
+                <input type="password" placeholder="Confirme a senha" required>
+            </div>
+        </form>
+        <div class="profile-picture">
+            <h3>Foto</h3>
+            <div class="input-group-photo">
+                <input type="file" id="foto" name="foto" accept="image/*" />
+                <img id="preview" src="#" alt="Pré-visualização">
+            </div>
+        </div>
+    </div>
+    <div class="register-button">
+        <button>Cadastrar</button>
+    </div>
+
+    <div id="footer">
+        <script>
+            fetch("../components/footer/footer.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("footer").innerHTML = data;
+                    let link = document.createElement("link");
+                    link.rel = "stylesheet";
+                    link.href = "../components/footer/footer.css";
+                    document.head.appendChild(link);
+                });
+        </script>
+    </div>
+
+    <script>
+        const input = document.getElementById('foto');
+        const preview = document.getElementById('preview');
+
+        input.addEventListener('change', function () {
+            const file = this.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+
+                reader.onload = function (e) {
+                    preview.setAttribute('src', e.target.result);
+                    preview.style.display = 'block';
+                }
+
+                reader.readAsDataURL(file);
+            } else {
+                preview.style.display = 'none';
+                preview.setAttribute('src', '#');
+            }
+        });
+    </script>
+</body>
+
+</html>

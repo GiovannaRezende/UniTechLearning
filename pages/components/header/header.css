@@ -2,11 +2,11 @@ body {
     margin: 0px;
     height: 100vh;
     width: 100vw;
-    background-color: #1C3354;
+    background-color: #F9F9F9;
     font-family: 'Inter';
 }
 
-header {
+.header {
     color: #FFF;
     font-weight: 700;
 }
@@ -16,22 +16,24 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #071533;
-    font-size: 12px;
-    padding: 0px 20px;
+    font-size: 14px;
+    padding: 0px 40px;
+    height: 50px;
 }
 
 .logo-links {
     display: flex;
     align-items: center;
-
 }
 
 .logo {
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .links a {
     padding: 0px 10px;
+    color: #FFF;
+    text-decoration: none;
 }
 
 .home:hover,
@@ -40,26 +42,18 @@ header {
     color: #808080;
 }
 
-nav,
-a {
-    color: #FFF;
-}
-
-a {
-    text-decoration: none;
-}
-
 .user {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.email {
+.user-email {
     padding: 0px 10px;
 }
 
 .user img {
-    width: 30px;
+    width: 35px;
+    height: 35px;
     border-radius: 30px;
 }

@@ -4,46 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esqueci a senha</title>
-    <link rel="stylesheet" href="styled.css">
+    <title>Esqueci a senha | UniTech Learning</title>
+    <link rel="shortcut icon" type="imagex/png" href="../../src/assets/images/icon-page.ico">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="logo-links">
-                <div class="logo">UniTech Learning</div>
-                <nav class="links">
-                    <ul>
-                        <a class="home" href="#">Home</a>
-                        <a class="courses" href="#">Cursos</a>
-                    </ul>
-                </nav>
-            </div>
-            <div class="user">
-                <div class="email">teste@gmail.com</div>
-                <img src="../../src/assets/images/user.png" alt="Imagem de perfil do usuário">
-            </div>
+    <div id="header">
+        <script>
+            fetch("../components/header/header.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("header").innerHTML = data;
+                    let link = document.createElement("link");
+                    link.rel = "stylesheet";
+                    link.href = "../components/header/header.css";
+                    document.head.appendChild(link);
+                });
+        </script>
+    </div>
+
+    <div class="forgot-password">
+        <div class="password-icon"><img src="../../src/assets/images/forgot-password.png" alt="Ícone de senha">
         </div>
-    </header>
-    <main>
-        <div class="forgot-password">
-            <div class="password-icon"><img src="../../src/assets/images/forget-password.png" alt="Ícone de senha">
-            </div>
-            <h2 class="title">Redefinir senha</h2>
-            <div class="subttitle">Informe um e-mail e enviaremos um link para recuperação da sua senha.</div>
-            <div class="input-group">
-                <span class="icon"><img src="../../src/assets/images/email.png" alt="Ícone de carta"></span>
-                <input type="email" placeholder="E-mail">
-            </div>
-            <div class="option-buttons">
-                <button class="send-link">Enviar link de recuperação</button>
-                <div class="or"> ou </div>
-                <a href="" class="create-account">Criar nova conta</a>
-                <button class="back-login"><a href="../login/index.html">Voltar ao login</a></button>
-            </div>
+        <h2 class="title">Redefinir senha</h2>
+        <div class="subtitle">Informe um e-mail e enviaremos um link para recuperação da sua senha.</div>
+        <div class="input-group">
+            <span class="icon"><img src="../../src/assets/images/email.png" alt="Ícone de carta"></span>
+            <input type="email" placeholder="E-mail">
         </div>
-    </main>
+        <div class="option-buttons">
+            <button class="send-link">Enviar link de recuperação</button>
+            <div class="or"> ou </div>
+            <a href="../registerUser/index.html" class="create-account">Criar nova conta</a>
+            <button class="back-login"><a href="../login/index.html">Voltar ao login</a></button>
+        </div>
+    </div>
+
+    <div id="footer">
+        <script>
+            fetch("../components/footer/footer.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("footer").innerHTML = data;
+                    let link = document.createElement("link");
+                    link.rel = "stylesheet";
+                    link.href = "../components/footer/footer.css";
+                    document.head.appendChild(link);
+                });
+        </script>
+    </div>
 </body>
 
 </html>

@@ -4,43 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="styled.css">
+    <title>Login | UniTech Learning</title>
+    <link rel="shortcut icon" type="imagex/png" href="../../src/assets/images/icon-page.ico">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="logo-links">
-                <div class="logo">UniTech Learning</div>
-                <nav class="links">
-                    <ul>
-                        <a class="home" href="#">Home</a>
-                        <a class="courses" href="#">Cursos</a>
-                    </ul>
-                </nav>
-            </div>
-            <div class="user">
-                <div class="email">teste@gmail.com</div>
-                <img src="../../src/assets/images/user.png" alt="Imagem de perfil do usuário">
-            </div>
+    <div id="header">
+        <script>
+            fetch("../components/header/header.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("header").innerHTML = data;
+                    let link = document.createElement("link");
+                    link.rel = "stylesheet";
+                    link.href = "../components/header/header.css";
+                    document.head.appendChild(link);
+                });
+        </script>
+    </div>
+
+    <div class="login">
+        <div class="logo"><img src="../../src/assets/images/logo.png" alt="Logotipo de empresa"></div>
+        <div class="input-group">
+            <span class="icon"><img src="../../src/assets/images/user.svg" alt="Ícone de usuário"></span>
+            <input type="text" placeholder="E-mail">
         </div>
-    </header>
-    <main>
-        <div class="login">
-            <div class="logo"><img src="../../src/assets/images/logo.png" alt="Logotipo de empresa"></div>
-            <div class="input-group">
-                <span class="icon"><img src="../../src/assets/images/login.svg" alt="Ícone de usuário"></span>
-                <input type="text" placeholder="Usuário">
-            </div>
-            <div class="input-group">
-                <span class="icon"><img src="../../src/assets/images/password.svg" alt="Ícone de cadeado"></span>
-                <input type="password" placeholder="Senha">
-            </div>
-            <a href="../forgotPassword/index.html" class="forgotpassword">Esqueci a senha</a>
-            <button>Entrar</button>
+        <div class="input-group">
+            <span class="icon"><img src="../../src/assets/images/password.svg" alt="Ícone de cadeado"></span>
+            <input type="password" placeholder="Senha">
         </div>
-    </main>
+        <a href="../forgotPassword/index.html" class="forgot-password">Esqueci a senha</a>
+        <button>Entrar</button>
+    </div>
+
+    <div id="footer">
+        <script>
+            fetch("../components/footer/footer.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("footer").innerHTML = data;
+                    let link = document.createElement("link");
+                    link.rel = "stylesheet";
+                    link.href = "../components/footer/footer.css";
+                    document.head.appendChild(link);
+                });
+        </script>
+    </div>
 </body>
 
 </html>

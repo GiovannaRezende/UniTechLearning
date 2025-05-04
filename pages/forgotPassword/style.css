@@ -2,62 +2,8 @@ body {
     margin: 0px;
     height: 100vh;
     width: 100vw;
-    background-color: #1C3354;
+    background-color: #F9F9F9;
     font-family: 'Inter';
-}
-
-header {
-    color: #FFF;
-    font-weight: 700;
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #071533;
-    font-size: 12px;
-    padding: 0px 30px;
-}
-
-.logo-links {
-    display: flex;
-    align-items: center;
-
-}
-
-.logo {
-    font-size: 18px;
-}
-
-.links a {
-    padding: 0px 10px;
-}
-
-.home:hover,
-.courses:hover {
-    transition: color 0.3s;
-    color: #808080;
-}
-
-.logo-links a {
-    color: #FFF;
-    text-decoration: none;
-}
-
-.user {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.email {
-    padding: 0px 10px;
-}
-
-.user img {
-    width: 30px;
-    border-radius: 30px;
 }
 
 .forgot-password {
@@ -68,11 +14,11 @@ header {
     background: #d9d9d9;
     padding: 25px;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 350px;
+    height: 430px;
 }
 
 .password-icon img {
@@ -80,8 +26,12 @@ header {
     height: 80px;
 }
 
-.title, .subttitle{
+.title, .subtitle{
     font-family: 'Inter';
+}
+
+.title {
+    font-size: 24px;
 }
 
 .input-group {
@@ -90,7 +40,7 @@ header {
     background: white;
     border-radius: 5px;
     margin: 10px 0;
-    padding: 7px;
+    padding: 10px;
     width: 90%;
 }
 
@@ -101,7 +51,7 @@ header {
 .input-group input {
     border: none;
     outline: none;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .input-group img {
@@ -116,10 +66,10 @@ header {
 }
 
 .send-link {
-    background: #0538A5;
+    background: #071533;
     color: white;
     border: none;
-    padding: 8px 15px;
+    padding: 10px 15px;
     border-radius: 5px;
     font-size: 14px;
     cursor: pointer;
@@ -130,7 +80,7 @@ header {
     color: #000;
     font-weight: 600;
     text-decoration: none;
-    margin: 15px 0px 20px 0px;
+    margin: 10px 0px 20px 0px;
 }
 
 
@@ -146,3 +96,4 @@ header {
     border: solid 1px #808080;
     padding: 10px 30px;
 }
+

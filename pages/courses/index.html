@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <infos charset="UTF-8">
+        <infos name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Cursos | UniTech Learning</title>
+            <link rel="shortcut icon" type="imagex/png" href="../../src/assets/images/icon-page.ico">
+            <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <script>
+            fetch("../components/header/header.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("header").innerHTML = data;
+                    let link = document.createElement("link");
+                    link.rel = "stylesheet";
+                    link.href = "../components/header/header.css";
+                    document.head.appendChild(link);
+                });
+        </script>
+    </div>
+
+    <div class="courses">
+
+        <div class="search">
+            <input type="text" placeholder="Qual conhecimento você que dominar hoje?" />
+            <img src="./../../src/assets/images/search.png" alt="Buscar" />
+        </div>
+
+        <section class="courses-grid">
+            <div class="course-card">
+                <img src="../../src/assets/images/course-icon.png" alt="Ícone Web" />
+                <h3>Desenvolvimento Web</h3>
+                <p>
+                    Aprenda a criar sites do zero com HTML, CSS e JavaScript. Mesmo sem experiência prévia,
+                    você desenvolverá páginas responsivas, aplicando boas práticas do mercado.
+                </p>
+                <p class="infos"><a>Duração:</a> 6 semanas<br><a>Nível:</a> Iniciante</p>
+                <button>Acessar Curso</button>
+            </div>
+
+            <div class="course-card">
+                <img src="../../src/assets/images/course-icon.png" alt="Ícone Web" />
+                <h3>Desenvolvimento Web</h3>
+                <p>
+                    Domine o desenvolvimento web completo com a stack MERN (MongoDB, Express, React, Node.js). Aprenda a
+                    construir aplicações modernas, integrando front-end e back-end com segurança, rotas, autenticação e
+                    banco de dados.
+                </p>
+                <p class="infos"><a>Duração:</a> 6 semanas<br><a>Nível:</a> Iniciante</p>
+                <button>Acessar Curso</button>
+            </div>
+
+            <div class="course-card">
+                <img src="../../src/assets/images/course-icon.png" alt="Ícone Web" />
+                <h3>Desenvolvimento Web</h3>
+                <p>
+                    Aprenda a criar sites do zero com HTML, CSS e JavaScript. Mesmo sem experiência prévia,
+                    você desenvolverá páginas responsivas, aplicando boas práticas do mercado.
+                </p>
+                <p class="infos"><a>Duração:</a> 6 semanas<br><a>Nível:</a> Iniciante</p>
+                <button>Acessar Curso</button>
+            </div>
+
+            <div class="course-card">
+                <img src="../../src/assets/images/course-icon.png" alt="Ícone Web" />
+                <h3>Desenvolvimento Web</h3>
+                <p>
+                    Aprenda a criar sites do zero com HTML, CSS e JavaScript. Mesmo sem experiência prévia,
+                    você desenvolverá páginas responsivas, aplicando boas práticas do mercado.
+                </p>
+                <p class="infos"><a>Duração:</a> 6 semanas<br><a>Nível:</a> Iniciante</p>
+                <button>Acessar Curso</button>
+            </div>
+
+            <div class="course-card">
+                <img src="../../src/assets/images/course-icon.png" alt="Ícone Web" />
+                <h3>Desenvolvimento Web</h3>
+                <p>
+                    Aprenda a criar sites do zero com HTML, CSS e JavaScript. Mesmo sem experiência prévia,
+                    você desenvolverá páginas responsivas, aplicando boas práticas do mercado.
+                </p>
+                <p class="infos"><a>Duração:</a> 6 semanas<br><a>Nível:</a> Iniciante</p>
+                <button>Acessar Curso</button>
+            </div>
+
+            <div class="course-card">
+                <img src="../../src/assets/images/course-icon.png" alt="Ícone Web" />
+                <h3>Desenvolvimento Web</h3>
+                <p>
+                    Aprenda a criar sites do zero com HTML, CSS e JavaScript. Mesmo sem experiência prévia,
+                    você desenvolverá páginas responsivas, aplicando boas práticas do mercado.
+                </p>
+                <p class="infos"><a>Duração:</a> 6 semanas<br><a>Nível:</a> Iniciante</p>
+                <button>Acessar Curso</button>
+            </div>
+
+            <div class="course-card">
+                <img src="../../src/assets/images/course-icon.png" alt="Ícone Web" />
+                <h3>Desenvolvimento Web</h3>
+                <p>
+                    Aprenda a criar sites do zero com HTML, CSS e JavaScript. Mesmo sem experiência prévia,
+                    você desenvolverá páginas responsivas, aplicando boas práticas do mercado.
+                </p>
+                <p class="infos"><a>Duração:</a> 6 semanas<br><a>Nível:</a> Iniciante</p>
+                <button>Acessar Curso</button>
+            </div>
+
+            <div class="course-card">
+                <img src="../../src/assets/images/course-icon.png" alt="Ícone Web" />
+                <h3>Desenvolvimento Web</h3>
+                <p>
+                    Aprenda a criar sites do zero com HTML, CSS e JavaScript. Mesmo sem experiência prévia,
+                    você desenvolverá páginas responsivas, aplicando boas práticas do mercado.
+                </p>
+                <p class="infos"><a>Duração:</a> 6 semanas<br><a>Nível:</a> Iniciante</p>
+                <button>Acessar Curso</button>
+            </div>
+
+            <div class="course-card">
+                <img src="../../src/assets/images/course-icon.png" alt="Ícone Web" />
+                <h3>Desenvolvimento Web</h3>
+                <p>
+                    Aprenda a criar sites do zero com HTML, CSS e JavaScript. Mesmo sem experiência prévia,
+                    você desenvolverá páginas responsivas, aplicando boas práticas do mercado.
+                </p>
+                <p class="infos"><a>Duração:</a> 6 semanas<br><a>Nível:</a> Iniciante</p>
+                <button>Acessar Curso</button>
+            </div>
+        </section>
+    </div>
+
+    <div class="footer">
+        <div class="footer-text">© 2025 UniTech Learning. Todos os direitos reservados.</div>
+    </div>
+</body>
+
+</html>
