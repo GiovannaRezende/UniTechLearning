@@ -8,25 +8,36 @@
     <link rel="shortcut icon" type="imagex/png" href="../../src/assets/images/icon-page.ico">
     <link rel="stylesheet" href="style.css">
 </head>
-
+    
 <body>
-    <div id="header">
-        <script>
-            fetch("../components/header/header.html")
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById("header").innerHTML = data;
-                    let link = document.createElement("link");
-                    link.rel = "stylesheet";
-                    link.href = "../components/header/header.css";
-                    document.head.appendChild(link);
-                });
-        </script>
+  <div class="container">
+    <div class="sidebar">
+      <img src="../../src/assets/images/home-background.png" alt="Logo Unitech Learning" class="logo" />
+      <div class="menu">
+        <p class="text">Vamos aprender?</p>
+        <button>Entrar</button>
+        <span class="or">ou</span>
+        <button>Criar conta</button>
+      </div>
     </div>
 
-    <div class="home">
-        
+    <div class="main-content">
+      <div class="content">
+        <h1>Sobre nós</h1>
+        <div class="text-columns">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet, lectus quis fringilla ornare, ex ipsum iaculis enim, in accumsan erat orci vitae ipsum...</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet, lectus quis fringilla ornare, ex ipsum iaculis enim, in accumsan erat orci vitae ipsum...</p>
+          <p>Nullam tincidunt odio augue, at sagittis risus viverra id. Donec sed tempus urna. In eget convallis mi, faucibus fringilla tortor...</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet, lectus quis fringilla ornare, ex ipsum iaculis enim, in accumsan erat orci vitae ipsum...</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet, lectus quis fringilla ornare, ex ipsum iaculis enim, in accumsan erat orci vitae ipsum...</p>
+          <p>Nullam tincidunt odio augue, at sagittis risus viverra id. Donec sed tempus urna. In eget convallis mi, faucibus fringilla tortor...</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet, lectus quis fringilla ornare, ex ipsum iaculis enim, in accumsan erat orci vitae ipsum...</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet, lectus quis fringilla ornare, ex ipsum iaculis enim, in accumsan erat orci vitae ipsum...</p>
+          <p>Nullam tincidunt odio augue, at sagittis risus viverra id. Donec sed tempus urna. In eget convallis mi, faucibus fringilla tortor...</p>
+        </div>
+      </div>
     </div>
+  </div>
 
     <div id="footer">
         <script>

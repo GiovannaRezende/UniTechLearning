@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <infos charset="UTF-8">
+        <infos name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Cursos | UniTech Learning</title>
+            <link rel="shortcut icon" type="imagex/png" href="../../src/assets/images/icon-page.ico">
+            <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header-container">
+        <div class="course-title">Python - Iniciante</div>
+        <nav class="links">
+            <a class="home" href="#">Home</a>
+            <a class="courses" href="#">Cursos</a>
+        </nav>
+        <div class="progress-container">
+            <span>91% CONCLUÍDO 40/45</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 91%;"></div>
+            </div>
+        </div>
+        <div class="user">
+            <div class="user-email">Olá, Maria!</div>
+            <img src="../../src/assets/images/profile.png" alt="Imagem de perfil do usuário">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="menu">
+            <div class="section">
+              <div class="section-header" onclick="toggleContent(this)">
+                <span class="section-title"><img src="../../src/assets/images/completed.png" alt=""> Introdução ao Mundo da Programação</span>
+                <span class="arrow">▼</span>
+              </div>
+              <div class="section-content">
+                <a class="item"><img src="../../src/assets/images/check.png" alt="">Aula 1</a>
+              </div>
+            </div>
+        
+            <div class="section">
+              <div class="section-header" onclick="toggleContent(this)">
+                <span class="section-title"><img src="../../src/assets/images/completed.png" alt=""> Primeiros passos em Python</span>
+                <span class="arrow">▼</span>
+              </div>
+              <div class="section-content">
+                <div class="item"><img src="../../src/assets/images/check.png" alt="">Aula 2 - Pra que serve o Python?</div>
+                <div class="item"><img src="../../src/assets/images/check.png" alt="">Aula 3 - Instalando Python3 e o IDLE</div>
+                <div class="item"><img src="../../src/assets/images/check.png" alt="">Aula 4 - Primeiros comandos em Python3</div>
+                <div class="item"><img src="../../src/assets/images/check.png" alt="">Aula 5 - Instalando PyCharm e o QPython3</div>
+              </div>
+            </div>
+        
+            <div class="section">
+              <div class="section-header" onclick="toggleContent(this)">
+                <span class="section-title"><img src="../../src/assets/images/completed.png" alt=""> Repetições For</span>
+                <span class="arrow">▼</span>
+              </div>
+              <div class="section-content">
+                <div class="item"><img src="../../src/assets/images/check.png" alt=""> Aula 13 - Estrutura de repetição For</div>
+                <div class="item"><img src="../../src/assets/images/check.png" alt=""> Exercício 26 - Contagem regressiva</div>
+                <div class="item"><img src="../../src/assets/images/pending.png" alt=""> Exercício 27 - Contagem de pares</div>
+                <div class="item"><img src="../../src/assets/images/pending.png" alt=""> Exercício 28 - Soma ímpares múltiplos de três</div>
+                <div class="item"><img src="../../src/assets/images/pending.png" alt=""> Exercício 29 - Tabuada v2.0</div>
+                <div class="item"><img src="../../src/assets/images/pending.png" alt=""> Exercício 30 - Maior e menor da sequência</div>
+                <div class="item"><img src="../../src/assets/images/pending.png" alt=""> Exercício 31 - Analisador completo</div>
+              </div>
+            </div>
+          </div>
+        
+          <script>
+            function toggleContent(header) {
+              const content = header.nextElementSibling;
+              const arrow = header.querySelector(".arrow");
+              content.classList.toggle("hidden");
+              arrow.textContent = content.classList.contains("hidden") ? "►" : "▼";
+            }
+          </script>
+
+        <div class="main-content">
+            <h2>Exercício 27 - Contagem de pares</h2>
+            <p class="course-info">Python - Iniciante <span class="status">EM ANDAMENTO</span></p>
+
+            <div class="video-player">
+                <video controls poster="video-thumb.jpg">
+                    <source src="video.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeo HTML5.
+                </video>
+            </div>
+
+            <div class="controls">
+                <button>Aula anterior</button>
+                <button>Marcar como concluído</button>
+            </div>
+          </div>
+    </div>
+</body>
+
+<div id="footer">
+  <script>
+      fetch("../components/footer/footer.html")
+          .then(response => response.text())
+          .then(data => {
+              document.getElementById("footer").innerHTML = data;
+              let link = document.createElement("link");
+              link.rel = "stylesheet";
+              link.href = "../components/footer/footerRelative.css";
+              document.head.appendChild(link);
+          });
+  </script>
+</div>
+
+</body>
+
+</html>

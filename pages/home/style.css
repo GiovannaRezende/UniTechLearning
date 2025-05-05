@@ -1,11 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0px;
     height: 100vh;
     width: 100vw;
-    background-color: #F9F9F9;
     font-family: 'Inter';
 }
 
-.home {
-    
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  background-color: rgba(14, 35, 66, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  max-width: 120px;
+  margin-bottom: 40px;
+}
+
+.menu {
+  text-align: center;
+}
+
+.text {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.or {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.main-content {
+  flex: 1;
+  background: url('../../src/assets/images/home-background.png') no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.content {
+  background-color: rgba(14, 35, 66, 0.9);
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 90%;
+}
+
+.content h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.text-columns {
+  column-count: 3;
+  column-gap: 30px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+button {
+  background: #071533;
+  color: white;
+  border: none;
+  padding: 13px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1C3354;
 }

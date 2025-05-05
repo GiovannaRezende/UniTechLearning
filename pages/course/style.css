@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Inter';
+    color: #FFF;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0c1d38;
+    padding: 10px 20px;
+    height: 50px;
+}
+
+.course-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.links a {
+    padding: 0px 10px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.home:hover,
+.courses:hover {
+    transition: color 0.3s;
+    color: #808080;
+}
+
+.progress-container {
+    flex: 1;
+    margin: 0 20px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.progress-bar {
+    background: #ccc;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 4px;
+}
+
+.progress {
+    height: 8px;
+    background: #007bff;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 60px);
+}
+
+.menu {
+    width: 320px;
+    background-color: #04153C;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.section-header {
+    padding: 12px;
+    background-color: #04153C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.section-header:hover {
+    background-color: #3a3d5c;
+}
+
+.section-title {
+    font-weight: bold;
+}
+
+.arrow {
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+.section-content {
+    background-color: #1C3354;
+    padding: 10px 12px;
+}
+
+.section-content.hidden {
+    display: none;
+}
+
+.item {
+    padding: 6px 0;
+    font-size: 14px;
+    border-bottom: 1px solid #444;
+}
+
+.main-content {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+    background-color: #0e2342;
+}
+
+.main-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.course-info {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.status {
+    background-color: #007bff;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+.video-player {
+    background-color: #000;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #0056b3;
+    color: white;
+}
+
+button {
+    background-color: #0048a4;
+    color: white;
+}
