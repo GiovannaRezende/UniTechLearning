@@ -6,6 +6,7 @@ import { fileURLToPath } from 'url';
 
 const app = express();
 app.use(express.json());
+app.use(express.urlencoded({ extended: true })); //ADICIONADA ESTA LINHA
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -43,6 +44,38 @@ app.post('/cadastrar', async (req, res) => {
   } catch (error) {
     console.error(error);
     res.status(500).send('Erro ao cadastrar');
+  }
+});
+
+app.post('/login', async (req, res) => {
+  const { email, senha } = req.body;
+
+  try {
+    const db = await open({
+      filename: './banco.db',
+      driver: sqlite3.Database
+    });
+
+    const usuario = await db.get('SELECT * FROM usuarios WHERE email = ?', [email]);
+
+    // if (!usuario) {
+    //   // redireciona para página de cadastro
+    //   return res.redirect('/pages/registerUser/index.html');
+    // }
+
+    if (!usuario) {
+      return res.send('<script>alert("E-mail não encontrado. Por favor, crie uma conta."); window.location.href="/pages/registerUser/index.html";</script>');
+    }
+
+    if (usuario.senha !== senha) {
+      return res.send('<script>alert("Senha incorreta."); window.location.href="/pages/login/index.html";</script>');
+    }
+
+    return res.redirect('/pages/courses/index.html');
+
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Erro no servidor');
   }
 });
 

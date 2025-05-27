@@ -24,7 +24,7 @@
         </script>
     </div>
 
-    <div class="login">
+    <!-- <div class="login">
         <div class="logo"><img src="../../src/assets/images/logo.png" alt="Logotipo de empresa"></div>
         <div class="input-group">
             <span class="icon"><img src="../../src/assets/images/user.svg" alt="Ícone de usuário"></span>
@@ -36,7 +36,23 @@
         </div>
         <a href="../forgotPassword/index.html" class="forgot-password">Esqueci a senha</a>
         <button>Entrar</button>
-    </div>
+    </div> -->
+    <form action="/login" method="POST" class="login">
+        <div class="logo"><img src="../../src/assets/images/logo.png" alt="Logotipo de empresa"></div>
+
+        <div class="input-group">
+            <span class="icon"><img src="../../src/assets/images/user.svg" alt="Ícone de usuário"></span>
+            <input type="text" name="email" placeholder="E-mail" required>
+        </div>
+
+        <div class="input-group">
+            <span class="icon"><img src="../../src/assets/images/password.svg" alt="Ícone de cadeado"></span>
+            <input type="password" name="senha" placeholder="Senha" required>
+        </div>
+
+        <a href="../forgotPassword/index.html" class="forgot-password">Esqueci a senha</a>
+        <button type="submit">Entrar</button>
+    </form>
 
     <div id="footer">
         <script>
