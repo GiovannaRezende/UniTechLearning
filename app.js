@@ -15,9 +15,13 @@ app.use('/components', express.static(path.join(__dirname, 'components')));
 app.use('/src', express.static(path.join(__dirname, 'src')));
 app.use('/pages', express.static(path.join(__dirname, 'pages')));
 
-// Página inicial apontando para o HTML principal
+// // Página inicial apontando para o HTML principal
+// app.get('/', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'pages/registerUser/index.html'));
+// });
+
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'pages/registerUser/index.html'));
+  res.redirect('/pages/home/index.html');
 });
 
 
