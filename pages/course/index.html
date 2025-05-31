@@ -6,7 +6,7 @@
         <infos name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Cursos | UniTech Learning</title>
             <link rel="shortcut icon" type="imagex/png" href="../../src/assets/images/icon-page.ico">
-            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="/pages/course/style.css"/>
 </head>
 
 <body>
@@ -100,7 +100,7 @@
 
 <div id="footer">
   <script>
-      fetch("../components/footer/footer.html")
+      fetch("/components/footer/footer.html")
           .then(response => response.text())
           .then(data => {
               document.getElementById("footer").innerHTML = data;
