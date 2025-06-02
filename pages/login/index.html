@@ -6,26 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login | UniTech Learning</title>
     <link rel="shortcut icon" type="imagex/png" href="../../src/assets/images/icon-page.ico">
-    <link rel="stylesheet" href="/pages/login/style.css"/>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    
-    <div class="page-container">
-        <div id="header">
-            <script>
-                fetch("/components/header/header.html")
-                    .then(response => response.text())
-                    .then(data => {
-                        document.getElementById("header").innerHTML = data;
-                        let link = document.createElement("link");
-                        link.rel = "stylesheet";
-                        link.href = "../components/header/header.css";
-                        document.head.appendChild(link);
-                    });
-            </script>
-        </div>
 
+    <div id="header"></div>
+
+    <div class="page-container">
         <form action="/login" method="POST" class="login">
             <div class="logo"><img src="../../src/assets/images/logo.png" alt="Logotipo de empresa"></div>
 
@@ -44,19 +32,30 @@
         </form>
     </div>
 
-    <div id="footer">
-        <script>
-            fetch("/components/footer/footer.html")
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById("footer").innerHTML = data;
-                    let link = document.createElement("link");
-                    link.rel = "stylesheet";
-                    link.href = "../components/footer/footer.css";
-                    document.head.appendChild(link);
-                });
-        </script>
-    </div>
+    <div id="footer"></div>
+
+    <script>
+        fetch("../../components/header/header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+                let link = document.createElement("link");
+                link.rel = "stylesheet";
+                link.href = "../../components/header/header.css";
+                document.head.appendChild(link);
+            });
+
+        fetch("../../components/footer/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+                let link = document.createElement("link");
+                link.rel = "stylesheet";
+                link.href = "../../components/footer/footer.css";
+                document.head.appendChild(link);
+            });
+    </script>
+
 </body>
 
 </html>

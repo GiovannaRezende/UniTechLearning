@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar | UniTech Learning</title>
     <link rel="shortcut icon" type="imagex/png" href="/src/assets/images/icon-page.ico">
-    <link rel="stylesheet" href="/pages/registerUser/style.css"/>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
     <div id="header">
         <script>
-            fetch("/components/header/header.html")
+            fetch("../../components/header/header.html")
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById("header").innerHTML = data;
                     let link = document.createElement("link");
                     link.rel = "stylesheet";
-                    link.href = "/components/header/header.css";
+                    link.href = "../../components/header/header.css";
                     document.head.appendChild(link);
                 });
         </script>
@@ -29,23 +29,23 @@
         <div class="form">
             <form action="" id="form-cadastro">
                 <div class="input-group">
-                    <span class="icon"><img src="/src/assets/images/user.svg" alt="Ícone de usuário"></span>
+                    <span class="icon"><img src="../../src/assets/images/user.svg" alt="Ícone de usuário"></span>
                     <input type="text" placeholder="Nome" required name="nome">
                 </div>
                 <div class="input-group">
-                    <span class="icon"><img src="/src/assets/images/user.svg" alt="Ícone de usuário"></span>
+                    <span class="icon"><img src="../../src/assets/images/user.svg" alt="Ícone de usuário"></span>
                     <input type="text" placeholder="Sobrenome" required name="sobrenome">
                 </div>
                 <div class="input-group">
-                    <span class="icon"><img src="/src/assets/images/email.png" alt="Ícone de usuário"></span>
+                    <span class="icon"><img src="../../src/assets/images/email.png" alt="Ícone de usuário"></span>
                     <input type="text" placeholder="Email" required name="email">
                 </div>
                 <div class="input-group">
-                    <span class="icon"><img src="/src/assets/images/password.svg" alt="Ícone de usuário"></span>
+                    <span class="icon"><img src="../../src/assets/images/password.svg" alt="Ícone de usuário"></span>
                     <input type="password" placeholder="Senha" required name="senha">
                 </div>
                 <div class="input-group">
-                    <span class="icon"><img src="/src/assets/images/password.svg" alt="Ícone de usuário"></span>
+                    <span class="icon"><img src="../../src/assets/images/password.svg" alt="Ícone de usuário"></span>
                     <input type="password" placeholder="Confirme a senha" required>
                 </div>
                 <div class="register-button">
@@ -68,13 +68,13 @@
 
     <div id="footer">
         <script>
-            fetch("/components/footer/footer.html")
+            fetch("../../components/footer/footer.html")
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById("footer").innerHTML = data;
                     let link = document.createElement("link");
                     link.rel = "stylesheet";
-                    link.href = "/components/footer/footerFixed.css";
+                    link.href = "../../components/footer/footerFixed.css";
                     document.head.appendChild(link);
                 });
         </script>

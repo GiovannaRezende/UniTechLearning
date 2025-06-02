@@ -79,7 +79,7 @@ body {
     padding: 30px;
 }
 
-button {
+.register-button input {
     background: #071533;
     color: white;
     border: none;
@@ -90,6 +90,6 @@ button {
     margin-top: 20px;
 }
 
-button:hover {
+.register-button input:hover {
     background: #1C3354;
 }

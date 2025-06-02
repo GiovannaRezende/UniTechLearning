@@ -10,10 +10,10 @@ html, body {
 }
 
 .page-container {
-  flex: 1; /* Faz o container ocupar o espaço restante entre header e footer */
+  flex: 1;
   display: flex;
-  justify-content: center; /* Centraliza horizontal */
-  align-items: center; /* Centraliza vertical */
+  justify-content: center;
+  align-items: center;
 }
 
 .login {
@@ -81,6 +81,5 @@ button:hover {
   color: white;
   padding: 20px;
   text-align: center;
-  /* Mantém o footer no fim */
   flex-shrink: 0;
 }
